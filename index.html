@@ -1,0 +1,75 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<main>
+<h1 id="title">FreeCodeCamp Survey Form</h1>
+<p id="description">Thank you for taking the time to help us improve the platform</p>
+<form id="survey-form">
+  <section id="personal-info">
+  <label for="name" id="name-label">Name
+  <input type="text" id="name" placeholder="Ollie Wride" name="name" required></label>
+  <label for="email" id="email-label">Email
+  <input type="email" id="email" placeholder="ollie@fm84.com" name="email" required></label>
+  <label for="number" id="number-label">Age (optional)
+  <input type="number" id="number" placeholder="30" name="number" min="10" max="100"></label>
+  </section>
+  
+  <section id="recommend">
+    <p>Would you recommend FreeCodeCamp to a friend?</p>
+  <label for="definitely"> 
+  <input id="definitely" value="definitely" type="radio" name="recommend">Definitely</label>
+  <label for="maybe"> 
+  <input id="maybe" value="maybe" type="radio" name="recommend">Maybe</label>
+  <label for="not-sure"> 
+  <input id="not-sure" value="not-sure" type="radio" name="recommend">Not Sure</label>
+  </section>
+  
+  <section id="dropdown">
+    <p>What is your favorite feature of freeCodeCamp?</p>
+    <label for="dropdown">
+      <select name="dropdown">
+      <option disabled selected value>Select an option</option>
+      <option value="challenges">Challenges</option>
+      <option value="projects">Projects</option>
+      <option value="community">Community</option>
+      <option value="open source">Open Source</option>
+      </select>
+    </label>
+  </section>
+  
+  <section id="improve">
+    <p>What would you like to see improved?</p><p style="font-size: 0.8em">(Check all that apply)</p>
+    <label for="front-end">
+      <input id="front-end" value="front-end" type="checkbox" name="improve">Front-end Projects</label>
+    <label for="back-end">
+      <input id="back-end" value="back-end" type="checkbox" name="improve">Back-End Projects</label>
+    <label for="data">
+      <input id="data" value="data" type="checkbox" name="improve">Data Visualization</label>
+    <label for="challenges">
+      <input id="challenges" value="challenges" type="checkbox" name="improve">Challenges</label>
+    <label for="open-source">
+      <input id="open-source" value="open-source" type="checkbox" name="improve">Open Source Community</label>
+    <label for="gitter">
+      <input id="gitter" value="gitter" type="checkbox" name="improve">Gitter help rooms</label>
+    <label for="videos">
+      <input id="videos" value="videos" type="checkbox" name="improve">Videos</label>
+    <label for="meetups">
+      <input id="meetups" value="meetups" type="checkbox" name="improve">City Meetups</label>
+    <label for="wiki">
+      <input id="wiki" value="wiki" type="checkbox" name="improve">Wiki</label>
+    <label for="forum">
+      <input id="forum" value="forum" type="checkbox" name="improve">Forum</label>
+    <label for="courses">
+      <input id="courses" value="courses" type="checkbox" name="improve">Additional Courses</label>
+  </section>
+  
+  <section id="comments">
+    <p>Any comments or suggestions?</p>
+    <label for="comments">
+      <textarea id="textarea" name="comments">
+      </textarea>
+    </label>
+  </section>
+  
+  <button type="submit" id="submit">Submit</button>
+</form>
+</main>
